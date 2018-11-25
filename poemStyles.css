@@ -148,6 +148,7 @@ input[type="number"]{
      }
 
 }
+
 @media only screen and (max-width: 768px){
     .level-item.columns{
         display: flex;
@@ -165,6 +166,15 @@ input[type="number"]{
     #list{
         height : 100px;
     }
+    body, .container, .level{
+        height: 115%;
+        overflow: scroll;
+    }
+    #poemConatiner{
+        position: absolute;
+        top: 100px;
+    }
+
 }
 @media only screen and (max-width: 1200px){
     #removequery{
