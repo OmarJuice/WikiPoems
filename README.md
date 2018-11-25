@@ -1,6 +1,7 @@
-V1 (Romance1.js) is a poem Generator that uses functions.
+# WikiPoems
+This app uses Wikipedia's API to generate random poems from extracts of many articles at once. 
+The algorithm uses a [Markov chain](https://en.wikipedia.org/wiki/Markov_chain) (of words) to sound more intelligible.  
+The app is built for mobile first.  
+HTML5, Bulma CSS, jQuery
 
-V2 (Romance2.js) is the same Generator written cleaner with prototypes, classes, and methods with some added functionality,
-such as the merge method of the Dictionary class, which will create a new Dictionary be combining two existing ones.
 
-Insert text in backticks(`text`) where asked to generate a random poem!
