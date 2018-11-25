@@ -155,13 +155,13 @@ input[type="number"]{
         flex-direction: column-reverse;
     }
     #PoemContainer{
-        width: 330px;
+        width: 100%;
     }
     #PoemBox{
         font-size: .9rem;
     }
     #box-content{
-        width: 235px;
+        width: 100%;
     }
     #list{
         height : 100px;
@@ -173,6 +173,9 @@ input[type="number"]{
     #poemConatiner{
         position: absolute;
         top: 100px;
+    }
+    #queryButtons{
+        margin: 10px 0px; 
     }
 
 }
