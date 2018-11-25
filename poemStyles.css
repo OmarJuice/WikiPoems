@@ -1,0 +1,174 @@
+:root{
+    --color: #e6e6fa;
+    --alt: #f5fffa;
+}
+@font-face
+{
+font-family: Saiyansans;
+src: url('Assets/saiyan_sans/Saiyan-Sans.ttf');
+}
+body, html, .container, .level{
+    height: 100%;
+}
+body{
+    background-image: url(Assets/full-bloom/full-bloom.png); 
+}
+.box{
+    background-color: var(--alt);
+    border: 10px solid var(--color);
+}
+.field.is-grouped{
+    display: flex;
+    justify-content: center;
+}
+.Lobster{
+    font-family: 'Lobster', sans-serif;
+}
+.Saiyan{
+    font-family: 'Saiyansans', sans-serif;
+}
+#logo{
+    color: orange;
+    font-size: 50px;
+}
+#github{
+    margin: 0px 30px;
+}
+
+.Aref{
+    font-family: 'Aref Ruqaa'
+}
+#PoemBox{
+    font-size: 1.1rem;
+}
+#list{
+    background-color: var(--color);
+    border: 5px solid var(--alt);
+    width: 100%;
+    height: 200px;
+    overflow-y: scroll;
+    overflow-x:hidden;
+}
+.vanish{
+    display: none;
+}
+#write a{
+    color:  navy;
+}
+#message{
+    width: 80%;
+    transition: all 1s;
+}
+li .far{
+    background-color: #e74c3c;
+    height: 20px;
+    margin-right: 5px;
+    text-align: center;
+    color: white;
+    width: 0px;
+    display: inline-block;
+    opacity: 0;
+    border-radius: 2px;
+
+}
+li:hover .far{
+    width: 20px;
+    opacity: 1;
+}
+li:hover .icon{
+    display: none;
+}
+#removequery{
+    display: none;
+}
+.invalid::placeholder{
+    color: #e74c3c; 
+    opacity: 1;
+}
+#message{
+    margin-left: 10%;
+}
+hr{
+    margin: 0px 0px;
+    background-color: var(--color)
+}
+input[type="number"]{
+    width: 100px;
+}
+#Search{
+    width: 80%;
+}
+#poemMod{
+    display: flex;
+    flex-direction: row;   
+}
+#warning{
+    color: red;
+}
+.notif{
+    margin-top: 12px;
+    margin-left: 10px;
+}
+#bankList{
+    margin-left: 20px;
+}
+.fa-search-plus, .fa-search-minus{
+    margin-left: 5px;
+}
+.fa-star{
+    color: purple;
+}
+#generate{
+    background-color: purple;
+    color: white;
+}
+.list-item, #bankList{
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.spinning{
+    animation: spin 2s linear infinite;
+    -moz-animation: spin 2s linear infinite;
+    -webkit-animation: spin 2s linear infinite;
+    -o-animation: spin 2s linear infinite;
+    
+}
+@keyframes spin{
+    0% {
+         transform: rotate(0deg);
+         -moz-transform: rotate(0deg);
+         -webkit-transform: rotate(0deg);
+         -o-transform: rotate(0deg);
+         }
+    100% { 
+        transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+     }
+
+}
+@media only screen and (max-width: 768px){
+    .level-item.columns{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #PoemContainer{
+        width: 330px;
+    }
+    #PoemBox{
+        font-size: .9rem;
+    }
+    #box-content{
+        width: 235px;
+    }
+    #list{
+        height : 100px;
+    }
+}
+@media only screen and (max-width: 1200px){
+    #removequery{
+        display: block;
+    }
+    
+}
